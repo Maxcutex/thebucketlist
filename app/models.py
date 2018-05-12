@@ -1,39 +1,39 @@
 # app/models.py
 
-from app import db
+from app import DB
 
 
 
 
+# pylint: disable=no-member
 
-
-class Bucketlist(db.Model):
+class Bucketlist(DB.Model):
     """This class represents the bucketlist table."""
 
     __tablename__ = 'bucketlists'
 
-    id = db.Column(db.Integer, db.Sequence('bucketlist_id_seq'), primary_key=True)
-    name = db.Column(db.String(255))
-    date_created = db.Column(db.DateTime, default=db.func.current_timestamp())
-    date_modified = db.Column(
-        db.DateTime, default=db.func.current_timestamp(),
-        onupdate=db.func.current_timestamp())
+    id = DB.Column(DB.Integer, DB.Sequence('bucketlist_id_seq'), primary_key=True)
+    name = DB.Column(DB.String(255))
+    date_created = DB.Column(DB.DateTime, default=DB.func.current_timestamp())
+    date_modified = DB.Column(
+        DB.DateTime, default=DB.func.current_timestamp(),
+        onupdate=DB.func.current_timestamp())
 
     def __init__(self, name):
         """initialize with name."""
         self.name = name
 
     def save(self):
-        db.session.add(self)
-        db.session.commit()
+        DB.session.add(self)
+        DB.session.commit()
 
     @staticmethod
     def get_all():
         return Bucketlist.query.all()
 
     def delete(self):
-        db.session.delete(self)
-        db.session.commit()
+        DB.session.delete(self)
+        DB.session.commit()
 
     def __repr__(self):
         return "<Bucketlist: {}>".format(self.name)

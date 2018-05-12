@@ -2,7 +2,7 @@
 import unittest
 import os
 import json
-from app import create_app, db
+from app import create_app, DB
 
 class BucketlistTestCase(unittest.TestCase):
     """This class represents the bucketlist test case"""
@@ -16,7 +16,7 @@ class BucketlistTestCase(unittest.TestCase):
         # binds the app to the current context
         with self.app.app_context():
             # create all tables
-            db.create_all()
+            DB.create_all()
 
     def test_bucketlist_creation(self):
         """Test API can create a bucketlist (POST request)"""
@@ -73,5 +73,9 @@ class BucketlistTestCase(unittest.TestCase):
         """teardown all initialized variables."""
         with self.app.app_context():
             # drop all tables
-            db.session.remove()
-            db.drop_all()
+            DB.session.remove()
+            DB.drop_all()
+
+# Make the tests conveniently executable
+if __name__ == "__main__":
+    unittest.main()

@@ -1,28 +1,34 @@
 # app/__init__.py
-
+""" this is documentation for app for rest service all methods. """
+import pdb
 from flask_api import FlaskAPI
 from flask_sqlalchemy import SQLAlchemy
+from flask import request, jsonify, abort
 
 # local import
 from instance.config import app_config
-from flask import request, jsonify, abort
 
 
 # initialize sql-alchemy
-db = SQLAlchemy()
+DB = SQLAlchemy()
 
 
 def create_app(config_name):
+    """ CREATE app module starts the application """
     from app.models import Bucketlist
-
+    #chk  = app_config[config_name]
+    #pdb.set_trace()
     app = FlaskAPI(__name__, instance_relative_config=True)
     app.config.from_object(app_config[config_name])
+    #  'your_app.config.{}'.format(config_name)
+    # app.config.from_object('app.config.config.{}'.format(config_name))
     app.config.from_pyfile('config.py')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    db.init_app(app)
+    DB.init_app(app)
 
     @app.route('/bucketlists/', methods=['POST', 'GET'])
     def bucketlists():
+        """ handles post and get """
         if request.method == "POST":
             name = str(request.data.get('name', ''))
             if name:
@@ -63,9 +69,7 @@ def create_app(config_name):
 
         if request.method == 'DELETE':
             bucketlist.delete()
-            return {
-                       "message": "bucketlist {} deleted successfully".format(bucketlist.id)
-                   }, 200
+            return {"message": "bucketlist {} deleted successfully".format(bucketlist.id)}, 200
 
         elif request.method == 'PUT':
             name = str(request.data.get('name', ''))
@@ -89,6 +93,5 @@ def create_app(config_name):
             })
             response.status_code = 200
             return response
-
 
     return app
