@@ -83,8 +83,8 @@
       <file leaf-file-name="circle.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/circle.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="675">
+              <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -320,7 +320,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526135284804</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="edit setting config">
+      <created>1526278249935</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1526278249935</updated>
+    </task>
+    <task id="LOCAL-00009" summary="edit setting config">
+      <created>1526278389277</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1526278389277</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -397,7 +411,8 @@
     <MESSAGE value="built to testing complete phase" />
     <MESSAGE value="update to configure development settings" />
     <MESSAGE value="setting version 3.4 for python" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting version 3.4 for python" />
+    <MESSAGE value="edit setting config" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit setting config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -585,8 +600,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/circle.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="675">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
         </state>
       </provider>
     </entry>
