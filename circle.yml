@@ -1,3 +1,17 @@
-machine:
-  post:
-    - pyenv global 3.4
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6.2-stretch-browsers
+        environment:
+          APP_CONFIG: testing
+          TEST_DATABASE_URL: postgresql://ubuntu@localhost/circle_test?sslmode=disable
+          FLASK_APP="run.py"
+          SECRET="ERdgoj8WgEjSaUOFyRtVFFUv9bCz2oeU"
+          APP_SETTINGS="DEVELOPMENT"
+          DATABASE_URL="postgresql://localhost/flaskapidb?user=flaskapi&password=flaskpass"
+      - image: circleci/postgres:9.6.5-alpine-ram
+        environment:
+          POSTGRES_USER: flaskapi
+          POSTGRES_DB: flaskapidb_test
+          POSTGRES_PASSWORD: "flaskpass"
