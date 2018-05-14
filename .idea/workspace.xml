@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca0d38b2-e788-45de-b3cb-77b053cbc5af" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/circle.yml" beforeDir="false" afterPath="$PROJECT_DIR$/circle.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,8 +84,8 @@
       <file leaf-file-name="circle.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/circle.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+            <state relative-caret-position="180">
+              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -334,7 +335,28 @@
       <option name="project" value="LOCAL" />
       <updated>1526278389277</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="using default settings">
+      <created>1526278547746</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1526278547746</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update requirements storage">
+      <created>1526278689001</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1526278689001</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update requirements storage">
+      <created>1526279092500</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1526279092500</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -412,7 +434,9 @@
     <MESSAGE value="update to configure development settings" />
     <MESSAGE value="setting version 3.4 for python" />
     <MESSAGE value="edit setting config" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit setting config" />
+    <MESSAGE value="using default settings" />
+    <MESSAGE value="update requirements storage" />
+    <option name="LAST_COMMIT_MESSAGE" value="update requirements storage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -600,8 +624,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/circle.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+        <state relative-caret-position="180">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
         </state>
       </provider>
     </entry>
